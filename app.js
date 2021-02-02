@@ -7,8 +7,8 @@
         let val1 = document.querySelector("#date1").value;
         let val2 = document.querySelector("#date2").value;
 
-        document.querySelector('#date1val').innerText = val1;
-        document.querySelector('#date2val').innerText = val2;
+        document.querySelector('#date1val').innerText = new Date(val1);
+        document.querySelector('#date2val').innerText = new Date(val2);
 
        
         let diff = Math.abs(new Date(val1).valueOf() - new Date(val2).valueOf());
